@@ -33,6 +33,7 @@
                 this.hasError = false
                 this.error = null
                 this.$emit('search', this.term)
+                this.term = ""
             }
         }
     }
