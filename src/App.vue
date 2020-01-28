@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container class="main-container">
     <b-row>
       <b-col>
         <list-giphs></list-giphs>
@@ -18,3 +18,9 @@
     }
 }
 </script>
+
+<style scoped>
+  .main-container {
+    margin-top: 100px;
+  }
+</style>

@@ -1,7 +1,7 @@
 <template>
-    <b-dropdown id="dropdown-1" text="Gifs to display" class="m-md-2 float-right" variant="success" v-model="number">
+    <b-nav-item-dropdown id="dropdown-1" text="Gifs to display" class="m-md-2" v-model="number" right>
         <b-dropdown-item v-for="option in options" v-bind:key="option" @click="updateNum(option)">{{option}}</b-dropdown-item>
-    </b-dropdown>
+    </b-nav-item-dropdown>
 </template>
 
 <script>

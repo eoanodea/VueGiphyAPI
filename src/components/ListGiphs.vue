@@ -1,14 +1,29 @@
 <template>
     <span>
-        <search v-on:search="searchGiphy"></search>
+        <b-navbar type="dark" variant="dark" class="nav" toggleable="md">
+            <b-navbar-brand>
+                Vue.js Giphy API
+            </b-navbar-brand>
+
+            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+            <b-collapse id="nav-collapse" is-nav>
+            
+            
+            <b-navbar-nav class="ml-auto">
+                <search v-on:search="searchGiphy"></search>
+                <number-drop-down v-on:filter="filterNumOfGifs"></number-drop-down>
+            </b-navbar-nav>
+
+            </b-collapse>
+        </b-navbar>
+        
         <div v-if="search" class="search-results-container" fade>
             <h2 >Search results for {{ search }}</h2>
             <b-button variant="danger" @click="trending">Clear Search</b-button>
         </div>
         <hr />
         <div v-if="gifs">
-            <number-drop-down v-on:filter="filterNumOfGifs"></number-drop-down>
-            <div class="clearfix"></div>
             <b-card-group columns>
             <b-card 
                 v-for="gif in gifs" 
@@ -21,7 +36,7 @@
             </b-card>
         </b-card-group>
         </div>
-        <p v-else>No Giphys</p>
+        <p v-else>No Giphys Found</p>
     </span>
 </template>
 <script>
@@ -76,5 +91,12 @@
     .search-results-container {
         display: flex;
         justify-content: space-between
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
     }
 </style>
