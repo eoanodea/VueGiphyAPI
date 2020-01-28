@@ -22,6 +22,7 @@
             <h2 >Search results for {{ search }}</h2>
             <b-button variant="danger" @click="trending">Clear Search</b-button>
         </div>
+        <h2 v-else>Trending </h2>
         <hr />
         <div v-if="gifs">
             <b-card-group columns>
