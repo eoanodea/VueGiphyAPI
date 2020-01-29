@@ -1,3 +1,19 @@
+/*
+ * File: ListGiphs.vue
+ * Project: vue-giph
+ * File Created: Tuesday, 28th January 2020 1:45:36 pm
+ * Author: Eoan O'Dea - eoan@wspace.ie
+ * ---------------
+ * File Description: Includes the App Navigation bar, 
+ * and list of Giphs which can either be trending or a search result
+ * Last Modified: Wednesday, 29th January 2020 3:19:00 pm
+ * Modified By: Eoan O'Dea - eoan@wspace.ie
+ * ---------------
+ * Copyright 2020 - WebSpace
+ */
+
+
+
 <template>
     <span>
         <b-navbar type="dark" variant="dark" class="nav" toggleable="md">
