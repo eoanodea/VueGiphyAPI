@@ -1,5 +1,7 @@
 # vue-giph
 
+A simple Vue.JS application where you can view a list of trending Gif's, and search for specific gifs. A live demo can be viewed <a href="http://code.wspace.ie/gif">here</a>
+
 ## Project setup
 ```
 npm install
@@ -14,11 +16,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
